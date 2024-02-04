@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+    <style>
+        /* Step 2: Using descendant selection in CSS */
+        body {
+            font-family: 'Roboto', Arial, sans-serif; 
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            line-height: 1.6; 
+        }
+
+        header {
+            background-color: #1e2444;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            margin-bottom: 20px; 
+        }
+
+        nav {
+            background-color: #1e2444;
+            color: #fff;
+            padding: 0.5em;
+            text-align: center; 
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0 0.5em;
+        }
+
+        nav a:hover {
+            background-color: #777;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        footer {
+            background-color: #1e2444;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #333; 
+        }
+
+        p {
+            font-size: 16px; 
+            line-height: 1.5; 
+        }
+
+        figure {
+            margin-top: 20px;
+            position: relative; 
+        }
+
+        figcaption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.7); 
+            color: #fff;
+            padding: 10px;
+            margin: 0;
+            width: 100%;
+            opacity: 0; 
+            transition: opacity 0.3s ease; 
+        }
+
+        figure:hover figcaption {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Suhayb's 5 Page Website</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Intro</a></li>
+            <li><a href="page2.html">Cars</a></li>
+            <li><a href="page3.html">Gym</a></li>
+            <li><a href="page4.html">Food</a></li>
+            <li><a href="page5.html">Animals</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Car:</h2>
+        <p>This is my attainable dream car that I plan to buy within the next year.</p>
+        <p>"Audi’s S6 is the hotter, more powerful version of the brand’s everyday A6 sedan. It has been around in its current incarnation since the 2012 model year, having benefited from only a single update last year that brought a bump in horsepower and mild cosmetic tweaks. Every S6 comes standard with Quattro, Audi’s all-wheel-drive system, as well as the A6 lineup’s only twin-turbocharged V-8. (Regular A6s make do with a turbocharged inline-four or a supercharged V-6.) The only visual telltales include trim-specific wheels, aluminum mirror caps, quad exhaust outlets, and a tiny S6 badge in the grille."</p>
+
+        <section>
+            <h2>Other alternatives:</h2>
+            <ul>
+                <li>Audi S4</li>
+                <li>BMW 550i</li>
+                <li>Mercedes CLS550</li>
+            </ul>
+        </section>
+
+        <figure>
+            <img src="https://i.pinimg.com/474x/48/54/22/485422b5cbde4a33bd89f166b9fad578.jpg" alt="Audi S6!!!">
+            <figcaption>The S6 we are looking at is modified. Very nice wheels and suspension. Big fan of the black and white theme.</figcaption>
+        </figure>
+
+        <section>
+            <h2>Other Honoroable alternatives:</h2>
+            <ul>
+                <li>Audi S4</li>
+                <li>BMW 550i</li>
+                <li>Mercedes CLS550</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Suhayb's Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

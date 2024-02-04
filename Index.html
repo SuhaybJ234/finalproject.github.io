@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+    <style>
+        /* Step 2: Using descendant selection in CSS */
+        body {
+            font-family: 'Roboto', Arial, sans-serif; 
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            line-height: 1.6; 
+        }
+
+        header {
+            background-color: #1e2444;
+            color: #fff; 
+            text-align: center;
+            padding: 1em 0;
+            margin-bottom: 20px; 
+        }
+
+        nav {
+            background-color: #1e2444;
+            color: #fff;
+            padding: 0.5em;
+            text-align: center; 
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0 0.5em;
+        }
+
+        nav a:hover {
+            background-color: #777;
+        }
+
+        main {
+            padding: 2em;
+            display: flex; /* Use flexbox for layout */
+        }
+
+        section {
+            flex: 1; /* Each section takes up equal space */
+            margin-right: 15px; /* Add some space between columns */
+        }
+
+        footer {
+            clear: both; /* Clear floats */
+            background-color: #1e2444;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #333; 
+        }
+
+        p {
+            font-size: 16px; /* Step 4: Controlling font-size */
+            line-height: 1.5; /* Step 4: Controlling line-height */
+        }
+
+        /* Step 5: Using figure and figcaption */
+        figure {
+            margin-top: 20px;
+            position: relative; 
+        }
+
+        figcaption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.7); 
+            color: #fff;
+            padding: 10px;
+            margin: 0;
+            width: 100%;
+            opacity: 0; 
+            transition: opacity 0.3s ease; 
+        }
+
+        figure:hover figcaption {
+            opacity: 1;
+        }
+
+        /* Descendant selection (highlighted) */
+        main table th,
+        main table td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: left;
+            background-color: #f7f7f7; /* Highlighted for clarity */
+        }
+
+        blockquote {
+    font-style: italic;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #f7f7f7;
+    border-left: 4px solid #1e2444; /* Matches the header background color */
+}
+
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Suhayb's 5 Page Website</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Intro</a></li>
+            <li><a href="page2.html">Cars</a></li>
+            <li><a href="page3.html">Gym</a></li>
+            <li><a href="page4.html">Food</a></li>
+            <li><a href="page5.html">Animals</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>My Schedule</h2>
+            <table border="1">
+                <tr>
+                    <th colspan="2">Today's Schedule</th>
+                </tr>
+                <tr>
+                    <td>Asynchronous</td>
+                    <td>CSCI 1020</td>
+                </tr>
+            </table>
+
+            <h2>My Goals</h2>
+            <ol>
+                <li>Learn Web Development</li>
+                <li>Build a Portfolio</li>
+                <li>Get an Internship</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Cars</li>
+                <li>Exercising</li>
+                <li>Food</li>
+            </ul>
+        </section>
+
+        <blockquote>
+            This is my blockquote for now.
+        </blockquote>
+
+    </main>
+
+    <figure>
+        <img src="https://marvel-b1-cdn.bc0a.com/f00000000290162/images.ctfassets.net/2htm8llflwdx/1LEJIT9KGRC4nwTJ5vuS6H/a912e31c468fd32986f2818816135cc4/OnlineLearning_SouthAsia_Learning_Indoor_GettyImages-1071652068.jpg?fit=thumb" alt="Comptuer Science">
+        <figcaption>This is a picture of someone who seems to have an interest in programming, the same way I do.</figcaption>
+    </figure>
+
+    <footer>
+        <p>&copy; 2024 Suhayb's Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
